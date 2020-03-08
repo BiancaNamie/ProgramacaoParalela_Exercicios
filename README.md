@@ -8,7 +8,5 @@ Exercicios OpenMP
 4- Encontrar o maior e o menor valor de um vetor.</br>
 5- Retornar todos os valores primos de 0 até N.</br>
 
-Compilação:  
-	gcc Ex5.c -o Ex5.exe -fopenmp </br>
-Executar:
-	  ./Ex5.exe
+Compilar:</br> gcc Ex5.c -o Ex5.exe -fopenmp </br>
+Executar:</br>   ./Ex5.exe
