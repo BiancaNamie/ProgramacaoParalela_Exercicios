@@ -18,17 +18,10 @@ int main(){
 
     #pragma omp parallel num_threads(6)
     {  
-        #pragma omp for reduction(min: minimo)
+        #pragma omp for reduction(min: minimo) reduction(max: maximo)
             for(i=1 ; i<tamanho ; i++){
-                if (vetor[i] < minimo){
-                    minimo = vetor[i];
-                }
-            }
-        #pragma omp for reduction(max: maximo)
-            for(i=1 ; i<tamanho ; i++){
-                if (vetor[i] > maximo){
-                    maximo = vetor[i];
-                }  
+                minimo = fmin(vetor[i], minimo);
+                maximo = fmax(vetor[i], maximo);
             }
     }
 
