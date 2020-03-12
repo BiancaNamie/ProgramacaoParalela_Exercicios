@@ -7,6 +7,7 @@ Exercicios OpenMP
 3- Calcular a média harmônica de um vetor.</br>
 4- Encontrar o maior e o menor valor de um vetor.</br>
 5- Retornar todos os valores primos de 0 até N.</br>
+Extra- Retornar os numeros amigos entre 0 até N.</br>
 
 Compilar:</br> gcc Ex5.c -o Ex5.exe -fopenmp </br>
 Executar:</br>   ./Ex5.exe
